@@ -1,0 +1,19 @@
+name: "💬 Feedback (pt-BR)"
+description: "Compartilhe impressões, sugestões ou comentários"
+title: "[Feedback] "
+labels: ["feedback", "triage"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Seu feedback
+      description: Conte o que achou e como podemos melhorar.
+    validations:
+      required: true
+
+  - type: input
+    id: contato
+    attributes:
+      label: Contato (opcional)
+      description: Se quiser resposta, deixe e-mail ou handle.
+      placeholder: "voce@exemplo.com"

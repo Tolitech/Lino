@@ -1,0 +1,31 @@
+name: "✨ Solicitação de Funcionalidade (pt-BR)"
+description: "Sugira uma nova funcionalidade ou melhoria"
+title: "[Feature] "
+labels: ["feature request", "triage"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Qual problema essa funcionalidade resolve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: Descreva como você imagina que ela funcionaria.
+
+  - type: textarea
+    id: beneficios
+    attributes:
+      label: Benefícios
+      description: Como isso melhoraria seu fluxo de trabalho ou o produto?
+
+  - type: input
+    id: relacionados
+    attributes:
+      label: Issues / referências relacionadas
+      description: Links ou números de issues relacionados (opcional).
+      placeholder: "#123 ou https://..."

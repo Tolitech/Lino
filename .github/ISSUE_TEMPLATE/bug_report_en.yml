@@ -1,0 +1,62 @@
+name: "🐞 Bug Report (en)"
+description: "Report something that isn't working as expected"
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the issue.
+      placeholder: "What happened? What did you expect?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide steps to reproduce the issue (exact commands if applicable).
+      placeholder: |
+        1. Run `lino project new`
+        2. Select option X
+        3. Observe error
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: CLI output / logs
+      description: Paste output, logs or stack traces (if any).
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Lino CLI version
+      description: e.g. 1.2.3
+      placeholder: "1.2.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      description: Select OS where the issue occurred.
+      options:
+        - "Windows"
+        - "macOS"
+        - "Linux"
+        - "Other"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this issue?
+      options:
+        - "low"
+        - "medium"
+        - "high"

@@ -1,0 +1,31 @@
+name: "✨ Feature Request (en)"
+description: "Suggest a new feature or improvement"
+title: "[Feature] "
+labels: ["feature request", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Which problem does this feature solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe how you'd like it to work.
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: How would this improve your workflow or the product?
+
+  - type: input
+    id: related
+    attributes:
+      label: Related issues / references
+      description: Optional links to related issues, docs or examples.
+      placeholder: "#123 or https://..."

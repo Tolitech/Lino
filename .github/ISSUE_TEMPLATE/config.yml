@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Lino
+    url: https://lino.dev
+    about: Visit the official website for documentation and roadmap.
+#  - name: Report security issue
+#    url: https://lino.dev/security
+#    about: Please report security or sensitive issues privately.

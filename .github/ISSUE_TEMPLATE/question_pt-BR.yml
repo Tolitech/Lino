@@ -1,0 +1,19 @@
+name: "❓ Pergunta (pt-BR)"
+description: "Envie uma dúvida ou solicite esclarecimento sobre o Lino"
+title: "[Dúvida] "
+labels: ["question", "triage"]
+body:
+  - type: textarea
+    id: pergunta
+    attributes:
+      label: Sua pergunta
+      description: Descreva sua dúvida de forma clara.
+    validations:
+      required: true
+
+  - type: input
+    id: contexto
+    attributes:
+      label: Contexto (opcional)
+      description: Versão do Lino, SO, tipo de conta etc.
+      placeholder: "Lino v1.2.3, Windows 11, conta Free"

@@ -1,0 +1,19 @@
+name: "💬 Feedback (en)"
+description: "Share thoughts, impressions or suggestions"
+title: "[Feedback] "
+labels: ["feedback", "triage"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Tell us what you liked, disliked or want improved.
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: If you want a reply, leave an email or handle.
+      placeholder: "you@example.com"
